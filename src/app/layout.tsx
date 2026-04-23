@@ -1,43 +1,15 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
-import { DM_Sans } from 'next/font/google';
+import { Cormorant_Garamond, DM_Sans } from 'next/font/google';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import '../styles/globals.css';
+import ScrollToTop from '@/components/ScrollToTop';
 
-const gtSectra = localFont({
-  src: [
-    {
-      path: '../../public/fonts/GT-Sectra-Light.woff2',
-      weight: '300',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/GT-Sectra-Light-Italic.woff2',
-      weight: '300',
-      style: 'italic',
-    },
-    {
-      path: '../../public/fonts/GT-Sectra-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/GT-Sectra-Italic.woff2',
-      weight: '400',
-      style: 'italic',
-    },
-    {
-      path: '../../public/fonts/GT-Sectra-Medium.woff2',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../../public/fonts/GT-Sectra-Medium-Italic.woff2',
-      weight: '500',
-      style: 'italic',
-    },
-  ],
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
   variable: '--font-serif',
 });
 
@@ -52,8 +24,10 @@ export const metadata: Metadata = {
   title: 'Devan Patel — Lawyer, Strategist & AI Ethics | Washington D.C.',
   description:
     'Catholic lawyer and DC strategist at the intersection of constitutional law, AI ethics, and faith. Counsel at Allegiance Strategies. Adjunct Professor, Notre Dame Law School.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
-
 export default function RootLayout({
   children,
 }: {
@@ -62,10 +36,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${gtSectra.variable} ${dmSans.variable} font-sans text-[#1A1A1A] bg-[#F5F0EA] antialiased`}
+        className={`${cormorantGaramond.variable} ${dmSans.variable} font-sans text-brand-charcoal bg-brand-beige antialiased`}
       >
         <Nav />
-        <main>{children}</main>
+        <main className='pt-[52px]'>{children}</main>
         <Footer />
       </body>
     </html>
