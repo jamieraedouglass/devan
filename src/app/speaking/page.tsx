@@ -33,10 +33,10 @@ export default function Speaking() {
             </p>
 
             <a
-              href='mailto:Devan.N.Patel@gmail.com'
+              href='mailto:Booking@DevanPatel.com'
               className='font-serif text-[22px] text-brand-charcoal hover:text-brand-forest transition-colors'
             >
-              Devan.N.Patel@gmail.com
+              Booking@DevanPatel.com
             </a>
             <p className='font-serif text-15px italic text-brand-mid mt-2'>
               For conferences, academic programs, podcasts, or workshops where

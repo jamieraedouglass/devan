@@ -141,14 +141,37 @@ export default function WritingTabs() {
               ]}
             />
             <WorkItem
+              type='OP-ED'
+              title='The Algorithm and the Republic'
+              meta='Joseph Rainey Center for Public Policy'
+              links={[
+                {
+                  label: 'Rainey Center',
+                  url: 'https://www.raineycenter.org/news/op-ed-the-algorithm-and-the-republic',
+                },
+              ]}
+            />
+            <WorkItem
               type='DECLARATION'
               title='Joint Statement on AI Ethics — Lead Drafter & Invited Signatory'
               meta='October 2024'
+              links={[
+                {
+                  label: 'Read Statement',
+                  url: 'https://89813af4-8ef5-4758-bad8-0351c4aeee7d.filesusr.com/ugd/1db8d9_6f15eda066404ed28f2d5d8fcf3cb6bd.pdf',
+                },
+              ]}
             />
             <WorkItem
               type='DECLARATION'
               title='Statement on Superintelligence — Invited Signatory'
               meta='October 2024'
+              links={[
+                {
+                  label: 'Read Statement',
+                  url: 'https://superintelligence-statement.org/',
+                },
+              ]}
             />
           </div>
           <div className='mx-8 md:mx-16 my-10'>
@@ -179,7 +202,13 @@ export default function WritingTabs() {
             <WorkItem
               type='PANEL'
               title="Implications of Pope Leo XIV's Election in an Age of AI — Moderator"
-              meta='American Security Foundation & University of Notre Dame'
+              meta='American Security Foundation & University of Notre Dame · May 2025'
+              links={[
+                {
+                  label: 'Watch Recording',
+                  url: 'https://www.dropbox.com/scl/fi/58eeeck520thsm4mrt7uv/ASF-The-Implications-of-Pope-Leo-XIV-s-Election-on-AI.mp4?rlkey=km6s5511v65o9pv7ck22aas73&e=2&st=bk8uxeoc&dl=0',
+                },
+              ]}
             />
             <WorkItem
               type='DECLARATION'
@@ -189,7 +218,13 @@ export default function WritingTabs() {
             <WorkItem
               type='KEYNOTE'
               title='Protecting the Most Vulnerable: AI Policy Lessons from the US'
-              meta='2025 CEPROME-Vatican Latin American Congress · Lima, Peru · February 2025'
+              meta='CEPROME-Vatican Latin American Congress · Lima, Peru · February 2025'
+              links={[
+                {
+                  label: 'Read Transcript',
+                  url: '/images/Devan Patel CEPROME 2025 Keynote Policy Lessons.pdf',
+                },
+              ]}
             />
             <WorkItem
               type='OP-ED'
@@ -230,11 +265,23 @@ export default function WritingTabs() {
               type='AMICUS'
               title='Brief of American Unity Fund and EPPC as Amici Curiae'
               meta='Kathy Chiles v. Patty Salazar · No. 24-579 · June 13, 2025'
+              links={[
+                {
+                  label: 'Read Brief',
+                  url: 'https://www.supremecourt.gov/DocketPDF/24/24-539/363197/20250613153436118_24-539%20Amicus%20Brief.pdf',
+                },
+              ]}
             />
             <WorkItem
               type='AMICUS'
               title='Brief for Prof. Dale Carpenter et al. as Amici Curiae Supporting Petitioners'
               meta='303 Creative LLC v. Elenis · No. 21-476 · May 31, 2022'
+              links={[
+                {
+                  label: 'Read Brief',
+                  url: 'https://www.supremecourt.gov/DocketPDF/21/21-476/226637/20220531142739104_21-476%20tsac%20Professor%20Carpenter%20et%20al.pdf',
+                },
+              ]}
             />
             <WorkItem
               type='JOURNAL'
@@ -251,6 +298,12 @@ export default function WritingTabs() {
               type='SENATE'
               title='Letter of Former Student Devan Patel — Amy Coney Barrett Nomination'
               meta='Read Into U.S. Senate Record by Sen. Tillis · October 13, 2020'
+              links={[
+                {
+                  label: 'Read Letter',
+                  url: 'https://www.judiciary.senate.gov/imo/media/doc/42.%20Devan%20Patel_Redacted.pdf',
+                },
+              ]}
             />
             <WorkItem
               type='JOURNAL'
@@ -297,6 +350,12 @@ export default function WritingTabs() {
               type='KEYNOTE'
               title='Protecting the Most Vulnerable: AI Policy Lessons from the US'
               meta='CEPROME-Vatican Latin American Congress · Lima, Peru · February 2025'
+              links={[
+                {
+                  label: 'Read Transcript',
+                  url: '/images/Devan Patel CEPROME 2025 Keynote Policy Lessons.pdf',
+                },
+              ]}
             />
             <WorkItem
               type='JOURNAL'
@@ -319,9 +378,8 @@ export default function WritingTabs() {
                 Four long-form essays in development: an analysis of Fr. Paolo
                 Benanti's AI ethics framework; a translation of Laudato Si into
                 policy language for a DC audience; why Catholic social teaching
-                produces different AI ethics conclusions than secular
-                frameworks; and rapid-response analysis of any papal document
-                touching AI.
+                produces different AI ethics conclusions than secular frameworks;
+                and rapid-response analysis of any papal document touching AI.
               </p>
             </div>
           </div>

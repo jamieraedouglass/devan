@@ -5,7 +5,7 @@ import { blurDataURL } from '@/lib/blur';
 export const metadata: Metadata = {
   title: 'About — Devan Patel',
   description:
-    'Catholic lawyer and DC strategist. Counsel at Allegiance Strategies, Adjunct Professor at Notre Dame Law School, Senior Fellow at American Security Fund.',
+    'Lawyer and political strategist in Washington, D.C. Visiting Fellow for Tech Ethics & Democracy at the Joseph Rainey Center for Public Policy.',
 };
 
 export default function About() {
@@ -143,7 +143,8 @@ export default function About() {
             serves as an adjunct professor of law at Notre Dame's law school,
             running the school's Washington, D.C.-based program to educate
             future government leaders. He is a fellow and scholar at Notre
-            Dame's McGrath Institute for Ethics and Culture.
+            Dame's de Nicola Center for Ethics and Culture, and an inaugural
+            member of the Federalist Society's AI & Law Working Group.
           </p>
         </div>
       </section>
@@ -160,16 +161,21 @@ export default function About() {
           </p>
           <blockquote className='pl-8 border-l-2 border-brand-forest'>
             <p className='font-serif text-19px leading-1.8 text-brand-mid'>
-              Devan Patel is a Catholic lawyer and strategist in Washington,
-              D.C. He serves as Counsel and Managing Director at Allegiance
-              Strategies and as Senior Advisor of Public Policy and Ethics at
-              American Security Fund, where he has emerged as a leading voice on
-              the intersection of artificial intelligence, national security,
-              and Catholic ethics. He is an adjunct professor of law at Notre
-              Dame Law School, a Fellow at Notre Dame's de Nicola Center for
-              Ethics and Culture, and has convened international AI ethics
-              summits at the Vatican in dialogue with the Holy See's advisors on
-              artificial intelligence.
+              Devan Patel is a lawyer and political strategist in Washington,
+              DC. He serves as the visiting fellow for tech ethics and democracy
+              at the Joseph Rainey Center. Previously, he served as counsel and
+              managing director of public policy at Allegiance Strategies as
+              well as the senior advisor of public policy and ethics at American
+              Security Fund, where he emerged as a leading voice at the
+              intersection of AI, national security, and Catholic ethics. He is
+              an adjunct professor of law at Notre Dame Law School, a fellow at
+              Notre Dame's de Nicola Center for Ethics and Culture, and an
+              inaugural member of the Federalist Society's AI & Law Working
+              Group. Devan has authored and negotiated state and federal
+              legislation, built and deployed unlikely advocacy coalitions, and
+              has spoken at or convened international AI ethics summits on four
+              continents, including a summit he convened at the Vatican in
+              dialogue with the Holy See's advisors on AI.
             </p>
           </blockquote>
         </div>
@@ -184,20 +190,22 @@ export default function About() {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6'>
             {[
               {
-                role: 'Counsel & Managing Director',
-                org: 'Allegiance Strategies',
+                role: 'Visiting Fellow for Tech Ethics & Democracy',
+                org: 'Joseph Rainey Center for Public Policy',
+              },
+              {
+                role: 'Founding Member, AI & Law Working Group',
+                org: 'Federalist Society',
               },
               {
                 role: 'Adjunct Professor of Law',
                 org: 'Notre Dame Law School',
               },
-              { role: 'Senior Fellow', org: 'American Security Fund' },
               {
                 role: 'Fellow',
-                org: 'McGrath Institute for Ethics and Culture',
+                org: 'de Nicola Center for Ethics and Culture',
               },
               { role: 'Fellow', org: 'Center for Christian Virtue' },
-              { role: 'Member', org: 'Federalist Society' },
               { role: 'Active Member', org: 'California Bar' },
             ].map(({ role, org }) => (
               <div key={org} className='flex flex-col gap-0.5'>
